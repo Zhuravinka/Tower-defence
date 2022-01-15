@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToPan: {fileID: 1530265127822179779}
   targetEnemy: {fileID: 0}
+  shootingRange: 30
+  projectileParticle: {fileID: 8628672945317340428}
 --- !u!1001 &1527294526983965099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,3 +294,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9fea4ae28c8b404e8ed5762045a5acf, type: 3}
+--- !u!198 &8628672945317340428 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5047882580345431458, guid: d9fea4ae28c8b404e8ed5762045a5acf, type: 3}
+  m_PrefabInstance: {fileID: 3581094141611131054}
+  m_PrefabAsset: {fileID: 0}
