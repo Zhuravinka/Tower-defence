@@ -23,10 +23,15 @@ public class Pathfinder : MonoBehaviour
 
     public List<Waypoint> GetPath()
     {
+        if (path.Count != 0)
+            return path;
+      
         LoadBlocks();
         BreadthSearch();
         CreatePath();
         return path;
+       
+       
     }
 
     private void CreatePath()
