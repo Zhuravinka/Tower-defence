@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7099561328511751954}
-  - component: {fileID: 7266860119496892236}
-  - component: {fileID: 875954210}
   - component: {fileID: 875954212}
+  - component: {fileID: 7266860119496892236}
   - component: {fileID: 875954211}
   m_Layer: 0
   m_Name: Enemy
@@ -35,33 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7266860119496892236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934055079791336282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01b22a4412491242adcfbf922418062, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &875954210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934055079791336282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31aaea0a8633e144da08ad15b44284ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startWaypoint: {fileID: 0}
-  endWaypoint: {fileID: 0}
-  isRunning: 1
 --- !u!54 &875954212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -78,6 +50,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7266860119496892236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934055079791336282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01b22a4412491242adcfbf922418062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &875954211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d2258b73ba7648a7b3599f4faf6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoints: 20
 --- !u!1001 &2342549639676800333
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
+    [SerializeField] Waypoint startWaypoint, endWaypoint;
+
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
     Vector2Int[] directions =
     {
@@ -17,13 +19,10 @@ public class Pathfinder : MonoBehaviour
     List<Waypoint> path = new List<Waypoint>();
     Waypoint searchCenter;
 
-    [SerializeField] Waypoint startWaypoint, endWaypoint;
-    [SerializeField] bool isRunning = true;
+     bool isRunning = true;
 
     public List<Waypoint> GetPath()
     {
-        startWaypoint.SetColor(Color.black);
-        endWaypoint.SetColor(Color.green);
         LoadBlocks();
         BreadthSearch();
         CreatePath();
