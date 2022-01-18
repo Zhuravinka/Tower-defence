@@ -5,7 +5,9 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     public bool isExplored = false;
+    public bool isPlaceable = true;
     public Waypoint exploredFrom;
+
     const int gridSize = 10;
 
     public int GetGridSize()
@@ -20,9 +22,13 @@ public class Waypoint : MonoBehaviour
         );
 
     }
-    public void SetColor(Color color)
+   
+    void OnMouseOver()
     {
-       MeshRenderer blockMeshRenderer =  transform.Find("Block").GetComponent<MeshRenderer>();
-       blockMeshRenderer.material.color = color;
+        if(Input.GetMouseButtonDown(0))
+        {
+
+        }
     }
+
 }
