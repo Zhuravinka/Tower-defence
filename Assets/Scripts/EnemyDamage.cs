@@ -1,17 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class EnemyDamage : MonoBehaviour
 {
     //[SerializeField] Collider collisionMesh;
     [SerializeField] int hitpoints;
     [SerializeField] ParticleSystem hitParticles;
     [SerializeField] ParticleSystem deathParticles;
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     private void OnParticleCollision(GameObject other)
@@ -36,4 +32,5 @@ public class EnemyDamage : MonoBehaviour
         Destroy(VFX.gameObject, destructionDelay);
         Destroy(gameObject);
     }
+   
 }

@@ -78,8 +78,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 20
+  scorePerHit: 10
   hitParticles: {fileID: 8790222681401341330}
   deathParticles: {fileID: 198537984209914932, guid: 1a51bfda454239a41afb7dee687c6ac0, type: 3}
+  scoreText: {fileID: 0}
 --- !u!1 &1646541640735296
 GameObject:
   m_ObjectHideFlags: 0
